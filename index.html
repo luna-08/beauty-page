@@ -24,6 +24,7 @@
         <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
         <nav class="menu" id="menu">
             <ul>
+                <li><a href="index.html" aria-current="page">Accueil</a></li>
                 <li><a href="pages/optique.html">Optique</a></li>
                 <li><a href="pages/audition.html">Audition</a></li>
                 <li><a href="pages/contact.html">Contact</a></li>
@@ -31,26 +32,27 @@
         </nav>
     </header>
     <main>
-        <div class="hero-intro">
-            <h1 class="titre1">Pour une optique et une audition plus nette</h1>
-            <a class="btn" href="pages/contact.html">Prendre rendez-vous</a>
-        </div>
-
-        <section class="contener1">
-            <img class="image1" src="images/hero.png" alt="Femme portant des lunettes">
-            <p class="p1">Chez Optique et Audition Wave, votre boutique spécialisée
-                en solutions auditives et optiques située au cœur de Paris,
-                au 49 rue de Trévise dans le 9e arrondissement. Notre
-                équipe de professionnels dévoués est à votre service pour
-                vous offrir des conseils personnalisés et des produits de
-                qualité afin d'améliorer votre confort visuel et auditif. Que
-                vous cherchiez des lunettes tendance, des lentilles de
-                contact, ou des aides auditives de dernière génération,
-                nous vous accueillons avec plaisir pour répondre à tous vos
-                besoins en matière de santé visuelle et auditive. Découvrez
-                une expérience unique et sur mesure chez Optique et
-                Audition Wave.</p>
+        <section class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">Paris 9e · Optique et Audition</p>
+                <h1>Pour une optique et une audition plus nette</h1>
+                <p class="lead">Lunettes, lentilles et aides auditives : des conseils personnalisés pour votre confort visuel et auditif.</p>
+                <div class="hero-actions">
+                    <a class="btn" href="pages/contact.html">Prendre rendez-vous</a>
+                    <a class="btn btn-outline" href="#services">Nos services</a>
+                </div>
+            </div>
+            <img class="hero-img" src="images/hero.png" alt="Femme portant des lunettes">
         </section>
+
+        <section class="contener1 about">
+            <div class="section1">
+                <h2>Votre boutique au cœur de Paris</h2>
+                <p>Chez Optique et Audition Wave, votre boutique spécialisée en solutions auditives et optiques située au cœur de Paris, au 49 rue de Trévise dans le 9e arrondissement. Notre équipe de professionnels dévoués est à votre service pour vous offrir des conseils personnalisés et des produits de qualité afin d'améliorer votre confort visuel et auditif. Que vous cherchiez des lunettes tendance, des lentilles de contact, ou des aides auditives de dernière génération, nous vous accueillons avec plaisir pour répondre à tous vos besoins en matière de santé visuelle et auditive. Découvrez une expérience unique et sur mesure chez Optique et Audition Wave.</p>
+            </div>
+        </section>
+
+        <div id="services"></div>
 
         <section class="contener2">
             <div class="section1">
@@ -81,18 +83,112 @@
                 <div><a class="learn-more" href="pages/audition.html">En Savoir plus</a></div>
             </div>
         </section>
+        <section class="stats">
+            <div><strong data-count="15">0</strong><span>ans d'expérience</span></div>
+            <div><strong data-count="2500" data-plus>0</strong><span>clients accompagnés</span></div>
+            <div><strong data-count="40" data-plus>0</strong><span>marques de montures</span></div>
+            <div><strong data-count="3">0</strong><span>spécialistes diplômés</span></div>
+        </section>
+
+        <section class="why">
+            <h2 class="section-title">Pourquoi nous choisir ?</h2>
+            <div class="cards">
+                <article>
+                    <i class="fas fa-glasses" aria-hidden="true"></i>
+                    <h3>Un grand choix</h3>
+                    <p>Des montures pour tous les styles et tous les budgets, et des verres de fabrication française.</p>
+                </article>
+                <article>
+                    <i class="fas fa-user-check" aria-hidden="true"></i>
+                    <h3>Des conseils sur mesure</h3>
+                    <p>Un opticien et un audioprothésiste à votre écoute, du premier bilan au suivi.</p>
+                </article>
+                <article>
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <h3>Un suivi durable</h3>
+                    <p>Réglages, entretien et contrôles réguliers, pour rester bien équipé dans la durée.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2 class="section-title">Ils nous font confiance</h2>
+            <div class="cards">
+                <blockquote>
+                    <p class="stars" aria-label="5 étoiles sur 5">★★★★★</p>
+                    <p>« Un accueil chaleureux et des conseils très précis. J'ai trouvé mes lunettes en une visite. »</p>
+                    <cite>Camille R.</cite>
+                </blockquote>
+                <blockquote>
+                    <p class="stars" aria-label="5 étoiles sur 5">★★★★★</p>
+                    <p>« Mon audioprothésiste a pris le temps de tout m'expliquer. Mes appareils sont presque invisibles. »</p>
+                    <cite>Michel D.</cite>
+                </blockquote>
+                <blockquote>
+                    <p class="stars" aria-label="5 étoiles sur 5">★★★★★</p>
+                    <p>« Un vrai suivi après l'achat, je recommande sans hésiter. »</p>
+                    <cite>Sofia B.</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2 class="section-title">Questions fréquentes</h2>
+            <details>
+                <summary>À quelle fréquence faire contrôler sa vue ?</summary>
+                <p>Un contrôle tous les un à deux ans est conseillé, ou dès que vous ressentez une gêne : maux de tête, fatigue visuelle, vision floue.</p>
+            </details>
+            <details>
+                <summary>Le bilan auditif est-il payant ?</summary>
+                <p>Dans notre boutique, le bilan auditif est offert et sans engagement.</p>
+            </details>
+            <details>
+                <summary>Acceptez-vous le tiers payant ?</summary>
+                <p>Oui, nous travaillons avec la plupart des mutuelles. Apportez votre carte, nous nous occupons du reste.</p>
+            </details>
+            <details>
+                <summary>Faut-il prendre rendez-vous ?</summary>
+                <p>Ce n'est pas obligatoire pour l'optique. Pour un bilan auditif, nous vous conseillons de réserver votre créneau.</p>
+            </details>
+        </section>
+
+        <section class="cta-band">
+            <h2>Prêt à mieux voir et mieux entendre ?</h2>
+            <p>Prenez rendez-vous dès aujourd'hui, nous vous accueillons du lundi au samedi.</p>
+            <a class="btn btn-light" href="pages/contact.html">Prendre rendez-vous</a>
+        </section>
     </main>
 
     <footer>
-        <p>Optique et Audition Wave · 49 rue de Trévise, 75009 Paris</p>
-        <div id="icons">
-            <a href="https://www.instagram.com/ton_compte" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:ton.email@example.com" aria-label="Envoyer un email"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/ton-profile" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <div class="footer-grid">
+            <div>
+                <h3>Optique et Audition Wave</h3>
+                <p>Votre boutique d'optique et d'audition au cœur de Paris.</p>
+                <div id="icons">
+                    <a href="https://www.instagram.com/ton_compte" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:ton.email@example.com" aria-label="Envoyer un email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3>Horaires</h3>
+                <ul class="hours">
+                    <li><span>Lun – Ven</span> 9h30 – 19h</li>
+                    <li><span>Samedi</span> 10h – 18h</li>
+                    <li><span>Dimanche</span> Fermé</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Nous trouver</h3>
+                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 49 rue de Trévise<br>75009 Paris</p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+33100000000">01 00 00 00 00</a></p>
+            </div>
         </div>
+        <p class="copyright">© 2026 Optique et Audition Wave · Projet scolaire</p>
     </footer>
 
     <script src="js/main.js"></script>
+    <button class="back-to-top" aria-label="Retour en haut"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
 </body>
 
 </html>
