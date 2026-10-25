@@ -12,24 +12,18 @@
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" >
     
 </head>
 
 <body>
-    <div class="announce"><span><i class="fas fa-check-circle" aria-hidden="true"></i> Bilan auditif offert</span><span><i class="fas fa-check-circle" aria-hidden="true"></i> Tiers payant accepté</span><span><i class="fas fa-check-circle" aria-hidden="true"></i> 2e paire offerte*</span></div>
+    <div class="announce"><span>Bilan auditif offert</span><span>Tiers payant accepté</span><span>Garantie 2 ans sur les montures</span></div>
     <header>
-        <a href="index.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
-        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="Optique et Audition Wave"></a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
         <nav class="menu" id="menu">
-            <ul>
-                <li><a href="index.html" aria-current="page">Accueil</a></li>
-                <li><a href="pages/optique.html">Optique</a></li>
-                <li><a href="pages/audition.html">Audition</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-            </ul>
+            <ul><li><a href="index.html" aria-current="page">Accueil</a></li><li><a href="pages/lunettes.html">Lunettes</a></li><li><a href="pages/montures.html">Montures</a></li><li><a href="pages/lentilles.html">Lentilles</a></li><li><a href="pages/audition.html">Audition</a></li><li><a href="pages/apropos.html">À propos</a></li><li><a href="pages/contact.html">Contact</a></li></ul>
         </nav>
     </header>
     <main>
@@ -47,49 +41,84 @@
         </section>
 
         <section class="reassurance">
-            <div><i class="fas fa-flag" aria-hidden="true"></i><strong>Verres français</strong><span>Fabrication de qualité</span></div>
-            <div><i class="fas fa-hand-holding-medical" aria-hidden="true"></i><strong>Tiers payant</strong><span>Avec la plupart des mutuelles</span></div>
-            <div><i class="fas fa-shield-alt" aria-hidden="true"></i><strong>Garantie 2 ans</strong><span>Sur toutes nos montures</span></div>
-            <div><i class="fas fa-headphones" aria-hidden="true"></i><strong>Bilan auditif offert</strong><span>Sans engagement</span></div>
+            <div><strong>Verres français</strong><span>Fabrication de qualité</span></div>
+            <div><strong>Tiers payant</strong><span>Avec la plupart des mutuelles</span></div>
+            <div><strong>Garantie 2 ans</strong><span>Sur toutes nos montures</span></div>
+            <div><strong>Bilan auditif offert</strong><span>Sans engagement</span></div>
         </section>
 
         <section id="services" class="tiles-section">
             <h2 class="section-title">Découvrez nos univers</h2>
             <div class="tiles">
-                <a class="tile" href="pages/optique.html">
+                <a class="tile" href="pages/lunettes.html">
                     <img src="images/optique.jpg" alt="" loading="lazy">
-                    <div><h3>Lunettes de vue</h3><span>Découvrir <i class="fas fa-arrow-right" aria-hidden="true"></i></span></div>
+                    <div><h3>Lunettes de vue</h3><span>Découvrir</span></div>
                 </a>
-                <a class="tile" href="pages/optique.html">
+                <a class="tile" href="pages/montures.html">
                     <img src="images/lunette.jpg" alt="" loading="lazy">
-                    <div><h3>Montures</h3><span>Découvrir <i class="fas fa-arrow-right" aria-hidden="true"></i></span></div>
+                    <div><h3>Montures</h3><span>Découvrir</span></div>
                 </a>
-                <a class="tile" href="pages/optique.html">
+                <a class="tile" href="pages/lentilles.html">
                     <img src="images/lentille.jpg" alt="" loading="lazy">
-                    <div><h3>Lentilles</h3><span>Découvrir <i class="fas fa-arrow-right" aria-hidden="true"></i></span></div>
+                    <div><h3>Lentilles</h3><span>Découvrir</span></div>
                 </a>
                 <a class="tile" href="pages/audition.html">
                     <img src="images/audition.jpg" alt="" loading="lazy">
-                    <div><h3>Audition</h3><span>Découvrir <i class="fas fa-arrow-right" aria-hidden="true"></i></span></div>
+                    <div><h3>Audition</h3><span>Découvrir</span></div>
                 </a>
             </div>
         </section>
 
-        <section class="promo">
-            <div>
-                <p class="eyebrow">Offre du moment</p>
-                <h2>La 2e paire offerte</h2>
-                <p>Pour tout achat d'une paire de lunettes de vue avec verres progressifs, la seconde paire est offerte.</p>
-                <a class="btn btn-light" href="pages/contact.html">J'en profite</a>
-                <p class="legal">*Offre fictive, dans le cadre d'un projet scolaire.</p>
+        <section class="booking" id="rendez-vous">
+            <div class="booking-intro">
+                <p class="eyebrow">Rendez-vous en ligne</p>
+                <h2>Réservez votre créneau en 3 clics</h2>
+                <p>Choisissez le service, le jour et l'horaire qui vous conviennent. Nous confirmons votre rendez-vous par email.</p>
             </div>
-            <div class="promo-badge" aria-hidden="true"><strong>2<sup>e</sup></strong><span>paire<br>offerte</span></div>
+            <form class="booking-form" id="bookingForm">
+                <fieldset>
+                    <legend>1. Votre besoin</legend>
+                    <div class="pills" data-group="service">
+                        <button type="button" aria-pressed="false" data-value="Lunettes de vue">Lunettes de vue</button>
+                        <button type="button" aria-pressed="false" data-value="Lentilles">Lentilles</button>
+                        <button type="button" aria-pressed="false" data-value="Bilan auditif">Bilan auditif</button>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>2. Le jour</legend>
+                    <div class="pills" data-group="day" id="dayList"></div>
+                </fieldset>
+                <fieldset>
+                    <legend>3. L'horaire</legend>
+                    <div class="slots" data-group="time" id="slotList"><p class="hint">Choisissez d'abord un jour.</p></div>
+                </fieldset>
+                <div class="booking-footer">
+                    <p id="bookingSummary" aria-live="polite">Aucun créneau sélectionné</p>
+                    <button type="submit" class="btn btn-light" id="bookingSubmit" disabled>Continuer</button>
+                </div>
+            </form>
         </section>
 
-        <section class="contener1 about">
-            <div class="section1">
-                <h2>Votre boutique au cœur de Paris</h2>
-                <p>Chez Optique et Audition Wave, votre boutique spécialisée en solutions auditives et optiques située au cœur de Paris, au 49 rue de Trévise dans le 9e arrondissement. Notre équipe de professionnels dévoués est à votre service pour vous offrir des conseils personnalisés et des produits de qualité afin d'améliorer votre confort visuel et auditif. Que vous cherchiez des lunettes tendance, des lentilles de contact, ou des aides auditives de dernière génération, nous vous accueillons avec plaisir pour répondre à tous vos besoins en matière de santé visuelle et auditive. Découvrez une expérience unique et sur mesure chez Optique et Audition Wave.</p>
+        <section class="store" id="boutique">
+            <div class="store-photos">
+                <img class="photo-main" src="images/boutique/presentoir.jpg" alt="Présentoir de montures et étuis en bois" loading="lazy">
+                <img class="photo-side" src="images/boutique/vitrine.jpg" alt="Mur de montures en boutique" loading="lazy">
+            </div>
+            <div class="store-text">
+                <p class="eyebrow">Notre boutique</p>
+                <h2>Un lieu pensé pour mieux voir et mieux entendre</h2>
+                <p class="lead">Au cœur de Paris, au 49 rue de Trévise dans le 9e arrondissement, Optique et Audition Wave réunit sous le même toit des solutions optiques et auditives.</p>
+                <p>Notre équipe de professionnels dévoués est à votre service pour vous offrir des conseils personnalisés et des produits de qualité, afin d'améliorer votre confort visuel et auditif. Que vous cherchiez des lunettes tendance, des lentilles de contact ou des aides auditives de dernière génération, nous vous accueillons avec plaisir pour répondre à tous vos besoins en matière de santé visuelle et auditive.</p>
+                <dl class="facts">
+                    <div><dt>Adresse</dt><dd>49 rue de Trévise<br>75009 Paris</dd></div>
+                    <div><dt>Ouverture</dt><dd>Lun – Ven 9h30–19h<br>Sam 10h–18h</dd></div>
+                    <div><dt>Équipe</dt><dd>Opticien-conseil<br>Audioprothésiste</dd></div>
+                </dl>
+                <div class="store-actions">
+                    <a class="btn" href="pages/contact.html">Nous rendre visite</a>
+                    <a class="btn btn-outline" href="pages/apropos.html">Notre histoire</a>
+                </div>
+                <p class="credit">Photos : Pexels</p>
             </div>
         </section>
 
@@ -104,7 +133,7 @@
                     soigneusement choisie de montures tendance, de
                     verres de haute qualité et de lentilles adaptées a
                     votre style de vie.</p>
-                <div><a class="learn-more" href="pages/optique.html">En Savoir plus</a></div>
+                <div><a class="learn-more" href="pages/lunettes.html">En Savoir plus</a></div>
             </div>
             <img loading="lazy" class="image2" src="images/optique.jpg" alt=" Homme assis portant des lunettes">
             
@@ -143,17 +172,17 @@
             <h2 class="section-title">Pourquoi nous choisir ?</h2>
             <div class="cards">
                 <article>
-                    <i class="fas fa-glasses" aria-hidden="true"></i>
+                    <span class="num">01</span>
                     <h3>Un grand choix</h3>
                     <p>Des montures pour tous les styles et tous les budgets, et des verres de fabrication française.</p>
                 </article>
                 <article>
-                    <i class="fas fa-user-check" aria-hidden="true"></i>
+                    <span class="num">02</span>
                     <h3>Des conseils sur mesure</h3>
                     <p>Un opticien et un audioprothésiste à votre écoute, du premier bilan au suivi.</p>
                 </article>
                 <article>
-                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <span class="num">03</span>
                     <h3>Un suivi durable</h3>
                     <p>Réglages, entretien et contrôles réguliers, pour rester bien équipé dans la durée.</p>
                 </article>
@@ -162,19 +191,20 @@
 
         <section class="testimonials">
             <h2 class="section-title">Ils nous font confiance</h2>
+            <div class="rating">
+                <strong>4,9</strong>
+                <div><span>sur 5</span><p>Note moyenne sur 128 avis clients</p></div>
+            </div>
             <div class="cards">
                 <blockquote>
-                    <p class="stars" aria-label="5 étoiles sur 5">★★★★★</p>
                     <p>« Un accueil chaleureux et des conseils très précis. J'ai trouvé mes lunettes en une visite. »</p>
                     <cite>Camille R.</cite>
                 </blockquote>
                 <blockquote>
-                    <p class="stars" aria-label="5 étoiles sur 5">★★★★★</p>
                     <p>« Mon audioprothésiste a pris le temps de tout m'expliquer. Mes appareils sont presque invisibles. »</p>
                     <cite>Michel D.</cite>
                 </blockquote>
                 <blockquote>
-                    <p class="stars" aria-label="5 étoiles sur 5">★★★★★</p>
                     <p>« Un vrai suivi après l'achat, je recommande sans hésiter. »</p>
                     <cite>Sofia B.</cite>
                 </blockquote>
@@ -213,11 +243,7 @@
             <div>
                 <h3>Optique et Audition Wave</h3>
                 <p>Votre boutique d'optique et d'audition au cœur de Paris.</p>
-                <div id="icons">
-                    <a href="https://www.instagram.com/ton_compte" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="mailto:ton.email@example.com" aria-label="Envoyer un email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                </div>
+                <p class="social"><a href="https://www.instagram.com/ton_compte" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:ton.email@example.com">Email</a></p>
             </div>
             <div>
                 <h3>Horaires</h3>
@@ -229,15 +255,17 @@
             </div>
             <div>
                 <h3>Nous trouver</h3>
-                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 49 rue de Trévise<br>75009 Paris</p>
-                <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+33100000000">01 00 00 00 00</a></p>
+                <p>49 rue de Trévise<br>75009 Paris</p>
+                <p>Métro Cadet (ligne 7)</p>
+                <p><a href="tel:+33100000000">01 00 00 00 00</a></p>
             </div>
         </div>
         <p class="copyright">© 2026 Optique et Audition Wave · Projet scolaire</p>
     </footer>
 
     <script src="js/main.js"></script>
-    <button class="back-to-top" aria-label="Retour en haut"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+    <script src="js/booking.js"></script>
+    <button class="back-to-top" aria-label="Retour en haut"></button>
 </body>
 
 </html>

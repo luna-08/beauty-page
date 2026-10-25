@@ -8,7 +8,7 @@ toggle.addEventListener("click", () => {
 });
 
 // Apparition douce des blocs au défilement
-const blocks = document.querySelectorAll(".contener1, .contener2, .contener3, .services, .contact-section, .stats, .reassurance div, .tile, .promo, .steps li, .why .cards article, .testimonials blockquote, .faq details, .cta-band");
+const blocks = document.querySelectorAll(".story, .timeline li, .team article, .payment, .store, .contener1, .contener2, .contener3, .services, .contact-section, .stats, .reassurance div, .tile, .booking, .quiz, .tabs, .values article, .model, .steps li, .why .cards article, .testimonials blockquote, .faq details, .cta-band");
 
 if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver((entries) => {
