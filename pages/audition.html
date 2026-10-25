@@ -12,21 +12,17 @@
     <link rel="icon" type="image/png" href="../images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" >
 </head>
 
 <body>
-    <header id="header">
-        <a href="../index.html"><img class="logo" src="../images/logo.png" alt="Logo"></a>
-        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
+    <div class="announce"><span>Bilan auditif offert</span><span>Tiers payant accepté</span><span>Garantie 2 ans sur les montures</span></div>
+    <header>
+        <a href="../index.html"><img class="logo" src="../images/logo.png" alt="Optique et Audition Wave"></a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
         <nav class="menu" id="menu">
-            <ul>
-                <li><a href="optique.html">Optique</a></li>
-                <li><a href="audition.html" aria-current="page">Audition</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <ul><li><a href="../index.html">Accueil</a></li><li><a href="lunettes.html">Lunettes</a></li><li><a href="montures.html">Montures</a></li><li><a href="lentilles.html">Lentilles</a></li><li><a href="audition.html" aria-current="page">Audition</a></li><li><a href="apropos.html">À propos</a></li><li><a href="contact.html">Contact</a></li></ul>
         </nav>
     </header>
     <main>
@@ -47,38 +43,88 @@
             </section>
         </div>
 
+        <section class="quiz">
+            <div class="quiz-intro">
+                <p class="eyebrow">Auto-évaluation</p>
+                <h2>Et si on faisait le point ?</h2>
+                <p>Répondez à cinq questions pour savoir si un bilan auditif peut vous être utile. Ce test est indicatif et ne remplace pas l'avis d'un professionnel.</p>
+            </div>
+            <form id="quizForm">
+                <fieldset>
+                    <legend>1. Vous demandez souvent aux autres de répéter.</legend>
+                    <div class="pills"><label><input type="radio" name="q0" value="1" required><span>Oui</span></label><label><input type="radio" name="q0" value="0"><span>Non</span></label></div>
+                </fieldset>
+                <fieldset>
+                    <legend>2. Vous montez le volume de la télévision plus que votre entourage.</legend>
+                    <div class="pills"><label><input type="radio" name="q1" value="1" required><span>Oui</span></label><label><input type="radio" name="q1" value="0"><span>Non</span></label></div>
+                </fieldset>
+                <fieldset>
+                    <legend>3. Vous avez du mal à suivre une conversation dans un lieu bruyant.</legend>
+                    <div class="pills"><label><input type="radio" name="q2" value="1" required><span>Oui</span></label><label><input type="radio" name="q2" value="0"><span>Non</span></label></div>
+                </fieldset>
+                <fieldset>
+                    <legend>4. Vous entendez des sons, mais ne comprenez pas toujours les mots.</legend>
+                    <div class="pills"><label><input type="radio" name="q3" value="1" required><span>Oui</span></label><label><input type="radio" name="q3" value="0"><span>Non</span></label></div>
+                </fieldset>
+                <fieldset>
+                    <legend>5. Vous évitez certaines sorties à cause du bruit.</legend>
+                    <div class="pills"><label><input type="radio" name="q4" value="1" required><span>Oui</span></label><label><input type="radio" name="q4" value="0"><span>Non</span></label></div>
+                </fieldset>
+                <button type="submit" class="btn">Voir mon résultat</button>
+                <div class="quiz-result" id="quizResult" hidden aria-live="polite"></div>
+            </form>
+        </section>
+
         <section class="services">
             <h2>Nos services auditifs</h2>
             <div class="cards">
                 <article>
-                    <i class="fas fa-headphones" aria-hidden="true"></i>
+                    <span class="num">01</span>
                     <h3>Bilan auditif</h3>
                     <p>Un test complet de votre audition, avec les conseils de notre audioprothésiste.</p>
                 </article>
                 <article>
-                    <i class="fas fa-sliders-h" aria-hidden="true"></i>
+                    <span class="num">02</span>
                     <h3>Aides auditives</h3>
                     <p>Des appareils discrets et de dernière génération, choisis selon votre audition et votre quotidien.</p>
                 </article>
                 <article>
-                    <i class="fas fa-handshake" aria-hidden="true"></i>
+                    <span class="num">03</span>
                     <h3>Suivi personnalisé</h3>
                     <p>Réglages, entretien et rendez-vous de contrôle pour rester bien équipé dans la durée.</p>
                 </article>
             </div>
-            <a class="btn" href="contact.html">Nous contacter</a>
+            <a class="btn" href="contact.html?service=Bilan%20auditif">Réserver un bilan offert</a>
         </section>
     </main>
 
     <footer>
-        <p>Optique et Audition Wave · 49 rue de Trévise, 75009 Paris</p>
-        <div id="icons">
-            <a href="https://www.instagram.com/ton_compte" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:ton.email@example.com" aria-label="Envoyer un email"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/ton-profile" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <div class="footer-grid">
+            <div>
+                <h3>Optique et Audition Wave</h3>
+                <p>Votre boutique d'optique et d'audition au cœur de Paris.</p>
+                <p class="social"><a href="https://www.instagram.com/ton_compte" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:ton.email@example.com">Email</a></p>
+            </div>
+            <div>
+                <h3>Horaires</h3>
+                <ul class="hours">
+                    <li><span>Lun – Ven</span> 9h30 – 19h</li>
+                    <li><span>Samedi</span> 10h – 18h</li>
+                    <li><span>Dimanche</span> Fermé</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Nous trouver</h3>
+                <p>49 rue de Trévise<br>75009 Paris</p>
+                <p>Métro Cadet (ligne 7)</p>
+                <p><a href="tel:+33100000000">01 00 00 00 00</a></p>
+            </div>
         </div>
+        <p class="copyright">© 2026 Optique et Audition Wave · Projet scolaire</p>
     </footer>
     <script src="../js/main.js"></script>
+    <script src="../js/quiz.js"></script>
+    <button class="back-to-top" aria-label="Retour en haut"></button>
 </body>
 
 </html>
