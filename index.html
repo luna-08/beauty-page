@@ -2,29 +2,42 @@
 <html lang="fr">
 
 <head>
-    <title>Optique Wave</title>
-    <meta charset="utf8">
-    <link rel="stylesheet" href="style.css">
+    <title>Optique et Audition Wave – Paris 9e</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Optique et Audition Wave, votre boutique d'optique et d'audition au cœur de Paris 9e : lunettes, lentilles et aides auditives.">
+    <meta property="og:title" content="Optique et Audition Wave – Paris 9e">
+    <meta property="og:description" content="Optique et Audition Wave, votre boutique d'optique et d'audition au cœur de Paris 9e : lunettes, lentilles et aides auditives.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" >
     
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img class="logo" src="logo.png" alt="Logo"></a>
-        <nav class="menu">
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
+        <nav class="menu" id="menu">
             <ul>
-                <li><a href="optique.html">Optique</a></li>
-                <li><a href="audition.html">Audition</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="pages/optique.html">Optique</a></li>
+                <li><a href="pages/audition.html">Audition</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1 class="titre1">Pour une optique et une audition plus nette</h1>
+        <div class="hero-intro">
+            <h1 class="titre1">Pour une optique et une audition plus nette</h1>
+            <a class="btn" href="pages/contact.html">Prendre rendez-vous</a>
+        </div>
 
         <section class="contener1">
-            <img class="image1" src="image.png" alt="Femme portant des lunettes">
+            <img class="image1" src="images/hero.png" alt="Femme portant des lunettes">
             <p class="p1">Chez Optique et Audition Wave, votre boutique spécialisée
                 en solutions auditives et optiques située au cœur de Paris,
                 au 49 rue de Trévise dans le 9e arrondissement. Notre
@@ -41,53 +54,45 @@
 
         <section class="contener2">
             <div class="section1">
-                   <h1 class="title2">Optique</h1>
+                   <h2 class="title2">Optique</h2>
                    <p class="p2">Bienvenue dans notre espace optique, où le style
                     rencontre la clarté.
                     Avec l'assistance experte de notre Opticien-conseil
                     Wave Optique plongez dans une sélection
                     soigneusement choisie de montures tendance, de
                     verres de haute qualité et de lentilles adaptées a
-                    votre style de vie.
-
-                <div><a class="learn-more" href="optique.html">En Savoir plus</a></div>
-                </p>
+                    votre style de vie.</p>
+                <div><a class="learn-more" href="pages/optique.html">En Savoir plus</a></div>
             </div>
-            <img class="image2" src="Optique.jpg" alt=" Homme assis portant des lunettes">
+            <img loading="lazy" class="image2" src="images/optique.jpg" alt=" Homme assis portant des lunettes">
             
         </section>
 
 
-        <section class="contener3"> <img class="image3" src="audition.jpg" alt="Problème d'audition">
+        <section class="contener3"> <img loading="lazy" class="image3" src="images/audition.jpg" alt="Problème d'audition">
             <div class="section2">
-                <h1 class="titre3">Audition</h1>
+                <h2 class="titre3">Audition</h2>
                 <p class="p3">Soyez les bienvenus dans notre espace Audition, où la
-                    qualité du son se marie à une expertise personnalisée assis avec ces lunettes optiques.
+                    qualité du son se marie à une expertise personnalisée.
                     Avec l'accompagnement attentif de notre
-                    Audioprothésiste, <br>
-                    explorez un...
-
-                <div><a class="learn-more" href="audition.html">En Savoir plus</a></div>
-                </p>
+                    Audioprothésiste, explorez une gamme d'aides auditives
+                    discrètes et de dernière génération, adaptées à votre
+                    audition et à votre quotidien.</p>
+                <div><a class="learn-more" href="pages/audition.html">En Savoir plus</a></div>
             </div>
         </section>
     </main>
 
     <footer>
+        <p>Optique et Audition Wave · 49 rue de Trévise, 75009 Paris</p>
         <div id="icons">
-                <a href="https://www.instagram.com/ton_compte" target="_blank">
-                <i class="fab fa-instagram"></i>
-                </a>
-                <a href="mailto:ton.email@example.com">
-                <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/ton-profile" target="_blank">
-                <i class="fab fa-linkedin"></i>
-                </a>
+            <a href="https://www.instagram.com/ton_compte" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:ton.email@example.com" aria-label="Envoyer un email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/ton-profile" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
-
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 
 </html>
