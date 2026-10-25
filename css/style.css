@@ -1,15 +1,16 @@
 /* ---------- Variables ---------- */
 
 :root {
-    --teal: #548684;
-    --teal-dark: #3b6563;
-    --teal-light: #e6f0ef;
-    --sand: #f7f4ef;
-    --ink: #1f2d2c;
-    --muted: #5c6b6a;
+    --primary: #0f4c5c;
+    --primary-dark: #0a3642;
+    --primary-light: #e3eff1;
+    --sand: #f8f5f0;
+    --ink: #14262b;
+    --muted: #58696d;
+    --accent: #c9a45c;
     --white: #ffffff;
     --radius: 18px;
-    --shadow: 0 8px 30px rgba(31, 45, 44, 0.08);
+    --shadow: 0 8px 30px rgba(20, 38, 43, 0.08);
 }
 
 /* ---------- Base ---------- */
@@ -50,7 +51,7 @@ h1 {
 h2 {
     font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 600;
-    color: var(--teal-dark);
+    color: var(--primary-dark);
 }
 
 p {
@@ -67,7 +68,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 6vw;
-    background-color: var(--teal);
+    background-color: var(--primary);
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
 }
 
@@ -172,7 +173,7 @@ main > h1 {
 }
 
 .tips li::marker {
-    color: var(--teal);
+    color: var(--primary);
 }
 
 .learn-more,
@@ -181,7 +182,7 @@ main > h1 {
     margin-top: 8px;
     padding: 10px 24px;
     border-radius: 999px;
-    background-color: var(--teal);
+    background-color: var(--primary);
     color: var(--white);
     font-weight: 600;
     text-decoration: none;
@@ -194,7 +195,7 @@ main > h1 {
 
 .learn-more:hover,
 .btn:hover {
-    background-color: var(--teal-dark);
+    background-color: var(--primary-dark);
     transform: translateY(-2px);
 }
 
@@ -203,7 +204,7 @@ main > h1 {
 body > footer {
     margin-top: 32px;
     padding: 48px 20px 20px;
-    background-color: var(--teal-dark);
+    background-color: var(--primary-dark);
     color: var(--white);
 }
 
@@ -255,7 +256,7 @@ body > footer h3 {
 }
 
 .hours.dark li {
-    border-bottom: 1px solid #e3eceb;
+    border-bottom: 1px solid #dfeaed;
 }
 
 #icons {
@@ -302,7 +303,7 @@ body > footer h3 {
 .contact-section input,
 .contact-section textarea {
     padding: 12px 14px;
-    border: 1px solid #cfdad9;
+    border: 1px solid #c9d9dd;
     border-radius: 10px;
     background-color: var(--sand);
     font: inherit;
@@ -310,8 +311,8 @@ body > footer h3 {
 
 .contact-section input:focus,
 .contact-section textarea:focus {
-    outline: 2px solid var(--teal);
-    border-color: var(--teal);
+    outline: 2px solid var(--primary);
+    border-color: var(--primary);
 }
 
 .contact-section button {
@@ -321,7 +322,7 @@ body > footer h3 {
 
 #statusMessage {
     margin-top: 12px;
-    color: var(--teal-dark);
+    color: var(--primary-dark);
 }
 
 /* ---------- Mobile ---------- */
@@ -382,7 +383,7 @@ body > footer h3 {
 .services {
     padding: 36px;
     margin-bottom: 32px;
-    background-color: var(--teal-light);
+    background-color: var(--primary-light);
     border-radius: var(--radius);
 }
 
@@ -402,7 +403,7 @@ body > footer h3 {
 
 .cards i {
     font-size: 28px;
-    color: var(--teal);
+    color: var(--primary);
     margin-bottom: 12px;
 }
 
@@ -501,7 +502,7 @@ body > footer h3 {
     gap: 48px;
     padding: 48px;
     margin-bottom: 32px;
-    background: linear-gradient(135deg, var(--teal-light), var(--white));
+    background: linear-gradient(135deg, var(--primary-light), var(--white));
     border-radius: var(--radius);
     box-shadow: var(--shadow);
 }
@@ -521,7 +522,7 @@ body > footer h3 {
 
 .eyebrow {
     margin-bottom: 8px;
-    color: var(--teal-dark);
+    color: var(--primary-dark);
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -542,12 +543,12 @@ body > footer h3 {
 
 .btn-outline {
     background-color: transparent;
-    color: var(--teal-dark);
-    box-shadow: inset 0 0 0 2px var(--teal);
+    color: var(--primary-dark);
+    box-shadow: inset 0 0 0 2px var(--primary);
 }
 
 .btn-outline:hover {
-    background-color: var(--teal);
+    background-color: var(--primary);
     color: var(--white);
 }
 
@@ -586,7 +587,7 @@ body > footer h3 {
     gap: 20px;
     padding: 36px;
     margin-bottom: 48px;
-    background-color: var(--teal);
+    background-color: var(--primary);
     color: var(--white);
     border-radius: var(--radius);
     text-align: center;
@@ -628,7 +629,7 @@ blockquote p {
 blockquote cite {
     font-style: normal;
     font-weight: 600;
-    color: var(--teal-dark);
+    color: var(--primary-dark);
 }
 
 .stars {
@@ -649,7 +650,7 @@ blockquote,
 .cards article:hover,
 blockquote:hover {
     transform: translateY(-6px);
-    box-shadow: 0 16px 40px rgba(31, 45, 44, 0.14);
+    box-shadow: 0 16px 40px rgba(20, 38, 43, 0.14);
 }
 
 .faq {
@@ -681,7 +682,7 @@ blockquote:hover {
 
 .faq summary::after {
     content: "+";
-    color: var(--teal);
+    color: var(--primary);
     font-size: 1.4rem;
     line-height: 1;
     transition: transform 0.25s;
@@ -700,7 +701,7 @@ blockquote:hover {
 .cta-band {
     padding: 48px 24px;
     margin-bottom: 8px;
-    background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
     color: var(--white);
     border-radius: var(--radius);
     text-align: center;
@@ -712,11 +713,11 @@ blockquote:hover {
 
 .btn-light {
     background-color: var(--white);
-    color: var(--teal-dark);
+    color: var(--primary-dark);
 }
 
 .btn-light:hover {
-    background-color: var(--teal-light);
+    background-color: var(--primary-light);
 }
 
 /* ---------- Animations et finitions ---------- */
@@ -782,7 +783,7 @@ blockquote.reveal:nth-child(3) { transition-delay: 0.2s; }
     height: 46px;
     border: none;
     border-radius: 50%;
-    background-color: var(--teal);
+    background-color: var(--primary);
     color: var(--white);
     box-shadow: var(--shadow);
     cursor: pointer;
@@ -799,7 +800,7 @@ blockquote.reveal:nth-child(3) { transition-delay: 0.2s; }
 }
 
 .back-to-top:hover {
-    background-color: var(--teal-dark);
+    background-color: var(--primary-dark);
 }
 
 html {
@@ -813,6 +814,169 @@ html {
 }
 
 .find-us a:not(.btn) {
-    color: var(--teal-dark);
+    color: var(--primary-dark);
     font-weight: 600;
+}
+
+/* ---------- Finitions « pro » ---------- */
+
+h1,
+h2 {
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+
+/* Navigation : soulignement doré à la place de la pastille */
+nav ul li a {
+    position: relative;
+    border-radius: 0;
+    padding: 8px 12px;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 2px;
+    height: 2px;
+    background-color: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s;
+}
+
+nav ul li a:hover,
+nav ul li a[aria-current="page"] {
+    background-color: transparent;
+}
+
+nav ul li a:hover::after,
+nav ul li a[aria-current="page"]::after {
+    transform: scaleX(1);
+}
+
+/* Cartes : bordure fine plutôt qu'une grosse ombre */
+.contener1,
+.contener2,
+.contener3,
+.cards article,
+blockquote,
+.faq details,
+.contact-section {
+    border: 1px solid rgba(15, 76, 92, 0.08);
+    box-shadow: 0 2px 4px rgba(20, 38, 43, 0.04), 0 12px 32px rgba(20, 38, 43, 0.06);
+}
+
+/* Titres de section avec filet doré */
+.section-title::after,
+.services h2::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 3px;
+    margin: 14px auto 0;
+    background-color: var(--accent);
+    border-radius: 2px;
+}
+
+.services h2::after {
+    margin-left: 0;
+}
+
+/* Hero sombre et plein */
+.hero {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary) 70%);
+    color: var(--white);
+    border: none;
+    padding: 64px 56px;
+}
+
+.hero h1 {
+    color: var(--white);
+}
+
+.hero .eyebrow {
+    color: var(--accent);
+}
+
+.hero .lead {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.hero .btn {
+    background-color: var(--white);
+    color: var(--primary-dark);
+}
+
+.hero .btn:hover {
+    background-color: var(--primary-light);
+}
+
+.hero .btn-outline {
+    background-color: transparent;
+    color: var(--white);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6);
+}
+
+.hero .btn-outline:hover {
+    background-color: var(--white);
+    color: var(--primary-dark);
+}
+
+.hero-img {
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.12), 0 24px 48px rgba(0, 0, 0, 0.3);
+}
+
+/* Chiffres clés */
+.stats {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+}
+
+.stats strong {
+    color: var(--accent);
+}
+
+.stats span {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* Icônes et étoiles */
+.cards i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 16px;
+    border-radius: 14px;
+    background-color: var(--primary-light);
+    font-size: 22px;
+}
+
+.eyebrow {
+    color: var(--primary);
+}
+
+.cta-band {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+}
+
+.cta-band h2 {
+    letter-spacing: -0.01em;
+}
+
+body > footer {
+    background-color: #0a2a33;
+}
+
+@media (max-width: 800px) {
+    .hero {
+        padding: 32px 24px;
+    }
+}
+
+blockquote .stars {
+    color: var(--accent);
 }
